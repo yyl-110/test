@@ -1,0 +1,135 @@
+/* 头部区域 */
+#header .web {
+    margin: 10px 30px 0 0 ;
+    height: 58px;
+    border-left: 1px solid #e6e6e6;
+    padding-top: 20px;
+    padding-left: 17px;
+    color: #536358;
+}
+#header .logo {
+    margin: 15px 27px 0 0;
+}
+#header .nav li {
+    float: left;
+    padding: 40px 0;
+    width: 130px;
+    text-align: center;
+}
+#header .nav li a {
+    color:#655959;
+}
+#header .nav li:first-child{
+    background: #00ae69;
+}
+#header .nav li:hover {
+    background: #00ae69;
+}
+#header .nav li:hover a {
+    color: #fff;
+}
+#header .nav li a:hover{
+    text-decoration: none;
+}
+/* banner区域 */
+#banner {
+    background: url(../images/500264491.jpg) no-repeat;
+    padding-top: 183px;
+    padding-bottom: 364px;
+    background-size: cover;
+    position: relative;
+}
+#banner .banner-bg {
+    background: url(../images/banner_bg.png) no-repeat;
+    text-align: center;
+    background-position: bottom;
+    height: 155px;
+}
+#banner .banner-bg h1 {
+    font-size: 55px;
+    font-family: kaiti;
+    font-weight: normal;
+}
+#banner .banner-bg p {
+    font-size: 20px;
+    color: #555b59;
+    line-height: 30px;
+}
+/* 中心区域 */
+#banner .banner-bg .title{
+  background:url(../images/0x0k.png) no-repeat;
+  background-size: contain;
+  letter-spacing: 4px;
+  line-height: 16px;
+    width: 30px;
+    height: 55px;
+    padding: 12px 0;
+}
+#banner .banner-bg .tbanner {
+    margin: 0 auto;
+    width: 500px;
+}
+/* 左右按钮 */
+#banner .left {
+    position: absolute;
+    top: 258px; 
+    left: 20px;
+}
+#banner .right {
+    position: absolute;
+    top: 258px;
+    right: 20px;
+}
+/* 关于我们 */
+#aboutus .demo {
+    background: url(../images/zhu1.jpg);
+    text-align: center;
+    padding: 45px 0 73px 0;
+}
+#aboutus .demo h2 {
+    margin-bottom: 5px;
+}
+#aboutus .demo p {
+    color: #a4a69b;
+}
+#aboutus .guild {
+    background: url(../images/beverage-breakfast-ceramic-230477.jpg) no-repeat;
+    height: 616px;
+    background-size: cover;
+}
+#aboutus .guild .introduce {
+    padding: 78px 376px 0 1038px;
+    color: #b9e9d3;
+    line-height: 34px;
+}
+#aboutus .guild .introduce h3 {
+    font-size: 25px;
+    color: #fff;
+}
+#aboutus .guild .introduce span {
+    font-size: 29px;
+    color: #38bd88;
+    line-height: 38px;
+}
+#aboutus .guild .introduce a {
+    display: block;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background: #33c563;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 48px;
+}
+/* 成功案例 */
+#shop .demo {
+    background: url(../images/zhu1.jpg);
+    text-align: center;
+    padding: 45px 0 73px 0;
+}
+#shop .demo h2 {
+    margin-bottom: 5px;
+}
+#shop .demo p {
+    color: #a4a69b;
+}
