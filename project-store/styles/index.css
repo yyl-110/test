@@ -59,7 +59,7 @@
 /* 顶部搜索框 */
 #header .top-search{
     position: fixed;
-    background: #ff7619;
+    background-color: rgba(255,123,0,.8);
     width: 100%;
     top: 0;
     z-index: 102;
@@ -808,6 +808,12 @@
 .center{
     margin-right: 2px;
 }
+.right{
+    display: none;
+}
+.right:first-of-type{
+    display: block;
+}
 .right>ul {
     width: 533px;
     margin-bottom: 2px;
@@ -896,6 +902,20 @@
     position: absolute;
     right: 17px;
 }
+/* 列表tab切换 */
+
+
+#main-goods .outbox{
+    width: 1200;
+    height: 636px;
+    overflow: hidden;
+}
+#main-goods .outbox .innerbox{
+    width: 2400px;
+    height: 636px;
+    position: relative;
+    left: 0;
+}
 #main-goods ul{
     padding: 10px 14px 0;
 }
@@ -951,7 +971,7 @@
 }
 .spirit{
     background-color: #f2f2f2;
-    padding: 24px 272px 18px;
+    padding: 24px 280px 18px;
 }
 .spirit li{
     float: left;
@@ -979,14 +999,16 @@
     font-size: 16px;
     color:#fff;
     background-color: #999;
-    position: absolute;
+    position: fixed;
     text-align: center;
-    top: -50px;
-    right: 60px;
+    bottom: 100px;
+    left: 50%;
+    margin-left: 600px;
     box-sizing: border-box;
     padding-top: 8px;
     font-family: SimHei;
     cursor: pointer;
+    display: none;
 }
 
 /* 页脚部分 */

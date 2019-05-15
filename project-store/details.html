@@ -5,16 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>乐购·产品详情</title>
-
-    <!-- 引入重置样式表 -->
-    <link rel="stylesheet" href="styles/reset.css">
-    <!-- 引入公共样式 -->
-    <link rel="stylesheet" href="styles/common.css">
-    <!-- 引入字体图标 -->
-    <link rel="stylesheet" href="font-icon/iconfont.css">
-    <!-- 引入首页样式 -->
-    <link rel="stylesheet" href="styles/details.css">
+    <title>产品详情</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./font-icon/iconfont.css">
+    <link rel="stylesheet" href="./styles/details.css">
 </head>
 
 <body>
@@ -75,563 +70,290 @@
         </div>
     </div>
 
-    <!-- banner区域 & -->
-    <div class="banner w1200 clearfix">
-        <div class="banner-images fl">
-            <div class="slider">
-                <!-- 左侧logo -->
-                <div class="nav-logo w1200">
-                    <div><img src="./images/logo1.jpg" alt=""></div>
-                    <span>全部商品分类 <i class="iconfont icon-xiangxia"></i></span>
-                </div>
-                <ul>
-                    <li><a href="#"><img src="./images/banner(1).jpg" alt=""></a></li>
-                    <li><a href="#"><img src="./images/banner(2).jpg" alt=""></a></li>
-                    <li><a href="#"><img src="./images/banner3.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="./images/banner4.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="./images/banner(2).jpg" alt=""></a></li>
-                    <li><a href="#"><img src="./images/banner4.jpg" alt=""></a></li>
-
-                </ul>
-                <div class="arrow">
-                    <i class="icon-zuo iconfont arrow-left"></i>
-                    <i class="iconfont icon-you arrow-right"></i>
-                </div>
-            </div>
-            <!-- 圆形轮播按钮 -->
-            <ul class="clearfix">
-                <li class="bgc-f60">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-            </ul>
+    <!-- 产品详情 -->
+    <div class="product-ditails">
+        <div class="nav-logo w1200">
+            <div><img src="./images/logo1.jpg" alt=""></div>
+            <span>全部商品分类 <i class="iconfont icon-xiangxia"></i></span>
         </div>
-
-        <!--手风琴效果 -->
-        <div class="accordion fr">
-            <span>新书畅销排行榜</span>
-            <dl id="book-list">
-                <dt>
-                    就喜欢你看不惯我 又干不</dt>
-                <dd>
-                    <img src="./images/书籍/qsj.jpg" alt="">
-                    <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                        世界路</div>
-
-                </dd>
-            </dl>
+        <!-- 乘积标题 -->
+        <div class="preparation w1200">
+            <span>图书</span>>小说>情感/家庭/婚姻>博集天地>她和他
+        </div>
+        <div class="product-content w1200 clearfix">
+            <div class="product-magnifier fl">
+                <img src="./images/000.png" alt="">
+                <p>商品编号：11950959</p>
+            </div>
+            <div class="product-buy fr">
+                <div class="product-introduce">
+                    <h1>她和他</h1>
+                    <p>《偷影子的人》作者马克·李维重磅
+                        新作，法国连续60周在榜，销量突破120万册</p>
+                    <p class="writer">[法] 马克·李维 著；杨亦雨 译</p>
+                </div>
+                <div class="product-price">
+                    <p> 乐&nbsp;购&nbsp;价：<span>￥26.26 </span> [6.9折]&emsp;[定价：￥38.00] (降价通知)</p>
+                    <p>促销信息：<span>满减 每满150.00元，可减50.00元现金<a href="#">详情 >></a></span></p>
+                    <div class="coupon">
+                        <span>领券:</span>
+                        <a href="#">100-6</a>
+                        <a href="#">100-6</a>
+                    </div>
+                    <div class="appraise">
+                        累计评价
+                        <span>99999</span>
+                    </div>
+                </div>
+                <!-- 种类选择 -->
+                <div class="choice" id="choice">
+                    <span>种类选择：</span>
+                    <button id="btn1" class="resemble">
+                        平装版
+                        <i class="icon-gou iconfont disBlock"></i>
+                    </button>
+                    <button id="btn2">
+                        精装版
+                        <i class="icon-gou iconfont"></i>
+                    </button>
+                </div>
+                <!-- 加入购物车 -->
+                <div class="add-cart clearfix" id="add-cart">
+                    <div class="amount fl clearfix">
+                        <div class="amount-left fl"><span> 0</span></div>
+                        <div class="amount-top fr">＋</div>
+                        <div class="amount-bottom fr">－</div>
+                    </div>
+                    <button class="fr">加入购物车</button>
+                </div>
+                <p>温馨提示：支持7天无理由退货</p>
+            </div>
         </div>
 
     </div>
-    <!-- 小广告 -->
-    <div class="small-banner w1200"><img src="./images/small.jpg" alt=""></div>
-
-    <!-- 图书折扣 -->
-    <div class="book-discount w1200">
-        <span class="topline">乐购·图书折扣区</span>
+    <!-- 人气单品-->
+    <div class="product w1200">
+        <span class="topline">人气单品</span>
         <div class="line"></div>
         <!-- 推荐产品列表 -->
         <ul class="bgc  clearfix">
 
             <li>
-                <div class="book-images">
+                <div class="product-images">
                     <img src="./images/书籍/1.jpg" alt="">
                 </div>
                 <div class="tag">
                     8折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:38</span>
-                    <span class="del"><del> ￥:58</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/1.jpg" alt="">
-                </div>
-                <div class="tag">
-                    8折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:38</span>
-                    <span class="del"><del> ￥:58</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/1.jpg" alt="">
-                </div>
-                <div class="tag">
-                    8折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:38</span>
-                    <span class="del"><del> ￥:58</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/1.jpg" alt="">
-                </div>
-                <div class="tag">
-                    8折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:38</span>
-                    <span class="del"><del> ￥:58</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/1.jpg" alt="">
-                </div>
-                <div class="tag">
-                    8折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:38</span>
-                    <span class="del"><del> ￥:58</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/2.jpg" alt="">
-                </div>
-                <div class="tag">
-                    6折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:30</span>
-                    <span class="del"><del> ￥:46</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/2.jpg" alt="">
-                </div>
-                <div class="tag">
-                    6折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:30</span>
-                    <span class="del"><del> ￥:46</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/2.jpg" alt="">
-                </div>
-                <div class="tag">
-                    6折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:30</span>
-                    <span class="del"><del> ￥:46</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/2.jpg" alt="">
-                </div>
-                <div class="tag">
-                    6折
-                </div>
-                <div class="introduce">
-                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
-                    <p class="score">
-                        推荐：<i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                        <i class="iconfont icon-wujiaoxing"></i>
-                    </p>
-                    <span>￥:30</span>
-                    <span class="del"><del> ￥:46</del></span>
-                </div>
-            </li>
-            <li>
-                <div class="book-images">
-                    <img src="./images/书籍/2.jpg" alt="">
-                </div>
-                <div class="tag">
-                    6折
                 </div>
                 <div class="introduce">
                     <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
                     <p class="score" id="score">
-                        推荐：<i class="iconfont icon-wujiaoxing color-fee"></i>
+                        推荐：<i class="iconfont icon-wujiaoxing"></i>
                         <i class="iconfont icon-wujiaoxing"></i>
                         <i class="iconfont icon-wujiaoxing"></i>
                         <i class="iconfont icon-wujiaoxing"></i>
                         <i class="iconfont icon-wujiaoxing"></i>
                     </p>
-                    <span>￥:30</span>
-                    <span class="del"><del> ￥:46</del></span>
+                    <span>￥:38</span>
+                    <span class="del"><del> ￥:58</del></span>
+                </div>
+            </li>
+            <li>
+                <div class="product-images">
+                    <img src="./images/书籍/1.jpg" alt="">
+                </div>
+                <div class="tag">
+                    8折
+                </div>
+                <div class="introduce">
+                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
+                    <p class="score" id="score">
+                        推荐：<i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                    </p>
+                    <span>￥:38</span>
+                    <span class="del"><del> ￥:58</del></span>
+                </div>
+            </li>
+            <li>
+                <div class="product-images">
+                    <img src="./images/书籍/1.jpg" alt="">
+                </div>
+                <div class="tag">
+                    8折
+                </div>
+                <div class="introduce">
+                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
+                    <p class="score" id="score">
+                        推荐：<i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                    </p>
+                    <span>￥:38</span>
+                    <span class="del"><del> ￥:58</del></span>
+                </div>
+            </li>
+            <li>
+                <div class="product-images">
+                    <img src="./images/书籍/1.jpg" alt="">
+                </div>
+                <div class="tag">
+                    8折
+                </div>
+                <div class="introduce">
+                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
+                    <p class="score" id="score">
+                        推荐：<i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                    </p>
+                    <span>￥:38</span>
+                    <span class="del"><del> ￥:58</del></span>
+                </div>
+            </li>
+            <li>
+                <div class="product-images">
+                    <img src="./images/书籍/1.jpg" alt="">
+                </div>
+                <div class="tag">
+                    8折
+                </div>
+                <div class="introduce">
+                    <p class="title"><a href="#">白夜行&emsp;东野上吾</a></p>
+                    <p class="score" id="score">
+                        推荐：<i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                        <i class="iconfont icon-wujiaoxing"></i>
+                    </p>
+                    <span>￥:38</span>
+                    <span class="del"><del> ￥:58</del></span>
                 </div>
             </li>
         </ul>
     </div>
 
-
-    <!-- 新书上架 -->
-    <div class="new-book w1200">
-        <div class="book-title">
-            <span>新</span>书上架
-        </div>
-        <div class="book-content clearfic">
-            <div class="line fl"></div>
-            <div class="book-left fl">
-                <ul class="clearfix">
-                    <li>
-                        <div><img src="./images/书籍/6.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li>
-                        <div><img src="./images/书籍/6.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li>
-                        <div><img src="./images/书籍/6.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li>
-                        <div><img src="./images/书籍/6.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li>
-                        <div><img src="./images/书籍/6.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li class="top-list">
-                        <div><img src="./images/书籍/5.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li class="top-list">
-                        <div><img src="./images/书籍/5.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li class="top-list">
-                        <div><img src="./images/书籍/5.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li class="top-list">
-                        <div><img src="./images/书籍/5.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                    <li class="top-list">
-                        <div><img src="./images/书籍/5.jpg" alt=""></div>
-                        <p class="title"> 查理&emsp;史密斯</p>
-                        <p>中国邮电出版社</p>
-                        <span>￥49</span>
-                        <span class="del"><del> ￥79</del></span>
-                    </li>
-                </ul>
+    <!-- 商品评价 -->
+    <div class="product-appraise w1200">
+        <!-- 看了又看 -->
+        <div class="left">
+            <div class="top-title">
+                看了又看
             </div>
-            <!--手风琴效果 -->
-            <div class="book-right fr">
-                <span>主编推荐</span>
-                <dl class="book-list">
-                    <dt>
-                        <span class="color-ff2315">1</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span class="color-ff2315">1</span>
-                        <img src="./images/书籍/qsj.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-                    <dt>
-                        <span class="color-ff2315">2</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span class="color-ff2315">2</span>
-                        <img src="./images/书籍/1.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-                    <dt>
-                        <span class="color-ff2315">3</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span class="color-ff2315">3</span>
-                        <img src="./images/书籍/2.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-                    <dt>
-                        <span>4</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span>4</span>
-                        <img src="./images/书籍/3.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-
-                    <dt>
-                        <span>5</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span>5</span>
-                        <img src="./images/书籍/4.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-
-                    <dt>
-                        <span>6</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span>6</span>
-                        <img src="./images/书籍/5.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-
-                    <dt>
-                        <span>7</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span>7</span>
-                        <img src="./images/书籍/6.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-                    <dt>
-                        <span>8</span>
-                        就喜欢你看不惯我 又干不</dt>
-                    <dd>
-                        <span>8</span>
-                        <img src="./images/书籍/6.jpg" alt="">
-                        <div class="fr">从你的全世界路过从你的全世界路过从你的全
-                            世界路过从你的全世界路过从你的全世界</div>
-
-                    </dd>
-                </dl>
-            </div>
+            <ul>
+                <li><img src="./images/t.png" alt=""></li>
+                <li><img src="./images/t.png" alt=""></li>
+                <li><img src="./images/t.png" alt=""></li>
+                <li><img src="./images/t.png" alt=""></li>
+                <li><img src="./images/t.png" alt=""></li>
+                <li><img src="./images/t.png" alt=""></li>
+                <li><img src="./images/t.png" alt=""></li>
+            </ul>
         </div>
+        <div class="right">
+
+        </div>
+
+
+
     </div>
 
 
-    <!-- 独家提供 -->
-    <div class="privision w1200">
-        <div class="privision-top clearfix">
-            <div class="privision-title fl">
-                <span>独</span>家提供
-            </div>
-            <ul class="privision-nav clearfix fr">
-                <li class="bgc-f60">货币金融</li>
-                <li>社会文学</li>
-                <li>科学技术</li>
-                <li>儿童文学</li>
-                <li>科学参辅</li>
-                <li>生活</li>
-                <li>小说</li>
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <!-- 底部banner -->
+    <div class="bottom-banner w1200">
+        <img src="./images/small.jpg" alt="">
+    </div>
+
+    <!-- 网页底部  -->
+    <!-- 精灵图 -->
+    <div class="last-line line">
+    </div>
+    <ul class="spirit clearfix">
+        <li class="spirit-icon icon-1"></li>
+        <li class="spirit-icon icon-2"></li>
+        <li class="spirit-icon icon-3"></li>
+        <li class="spirit-icon icon-4"></li>
+    </ul>
+    <!-- 页脚 -->
+    <div id="footer" class="w1200">
+        <div class="foot-list clearfix">
+            <ul>
+                <li>购物指南</li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">发票制度</a></li>
+                <li><a href="#">账户管理</a></li>
+                <li><a href="#">会员优惠</a></li>
             </ul>
+            <ul>
+                <li>支付方式</li>
+                <li><a href="#">货到付款</a></li>
+                <li><a href="#">网上支付</a></li>
+                <li><a href="#">礼品卡支付</a></li>
+                <li><a href="#">银行转账</a></li>
+            </ul>
+            <ul>
+                <li>订单服务</li>
+                <li><a href="#">订单配送查询</a></li>
+                <li><a href="#">订单状态查询</a></li>
+                <li><a href="#">自助取消订单</a></li>
+                <li><a href="#">自助修改订单</a></li>
+            </ul>
+            <ul>
+                <li>退换货</li>
+                <li><a href="#">退换货政策</a></li>
+                <li><a href="#">自助生气退换货</a></li>
+                <li><a href="#">退换货进度查询</a></li>
+                <li><a href="#">退款方式和时间</a></li>
+            </ul>
+            <ul>
+                <li>商家服务</li>
+                <li><a href="#">商家中心</a></li>
+                <li><a href="#">运营服务</a></li>
+                <li><a href="#">加入尾品汇</a></li>
+            </ul>
+            <div class="foot-logo fl">
+                <img src="./images/logo.png" alt="">
+            </div>
         </div>
-        <!-- 导航线 -->
-        <div class="line"></div>
-        <div class="privision-content">
-            <ul class="clearfix recommend-book">
-                <li>
-                    <div><img src="./images/书籍/6.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li>
-                    <div><img src="./images/书籍/6.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li>
-                    <div><img src="./images/书籍/6.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li>
-                    <div><img src="./images/书籍/6.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li>
-                    <div><img src="./images/书籍/6.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li>
-                    <div><img src="./images/书籍/6.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li class="top-list">
-                    <div><img src="./images/书籍/5.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li class="top-list">
-                    <div><img src="./images/书籍/5.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li class="top-list">
-                    <div><img src="./images/书籍/5.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li class="top-list">
-                    <div><img src="./images/书籍/5.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li class="top-list">
-                    <div><img src="./images/书籍/5.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-                <li class="top-list">
-                    <div><img src="./images/书籍/5.jpg" alt=""></div>
-                    <p class="title"> 查理&emsp;史密斯</p>
-                    <p>中国邮电出版社</p>
-                    <span>￥49</span>
-                    <span class="del"><del> ￥79</del></span>
-                </li>
-            </ul>
-            <div class="btn-arrow">
-                <i class="iconfont icon-zuo btn-left"></i>
-                <i class="icon-you iconfont btn-right"></i>
-            </div>
-            <ul class="slider-ball">
-                <li class="bgc-f60"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="foot-link">
+            <a href="#">公司简介</a>
+            <a href="#">Investor Relations </a>
+            <a href="#">网站联盟</a>
+            <a href="#">乐购招商 </a>
+            <a href="#">机构销售</a>
+            <a href="#">手机乐购</a>
+            <a href="#">官方Blog</a>
+            <a href="#">热词搜索</a>
         </div>
     </div>
 
@@ -645,38 +367,8 @@
 
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- jQuery -->
     <script src="./js/jquery.js"></script>
-    <!-- 首页js -->
     <script src="./js/details.js"></script>
-
 </body>
 
 </html>

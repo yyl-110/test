@@ -127,7 +127,7 @@
 
     /* 左侧楼层跳转 */
     $(function () {
-        var obj = new floor('.goTop', '.fixedmeau>li', '.floor', '#main-book');
+        var obj = new floor('.gotop', '.fixedmeau>li', '.floor', '#main-book');
         obj.init()
     })
 
@@ -137,9 +137,11 @@
         if ($top > 600){
             $('#header .top-search').slideDown();
             $('.fixedmeau').fadeIn()
+            $('.goTop').slideDown();
         }else{
             $('#header .top-search').slideUp();
             $('.fixedmeau').fadeOut()
+            $('.goTop').slideUp();
         }
     });
 
@@ -165,20 +167,32 @@
 
     })
     // 服装
+    $('#main-clothes .right:first').css('display','block')
     $('#main-clothes>ul>li').on('mouseenter', function () {
         $(this).addClass('active').siblings().removeClass('active')
+        var index = $(this).index();
+        $('#main-clothes .right').eq(index).css('display','block').siblings('.right').css('display','none')
     })
     // 户外运动
+    $('#main-sports .right:first').css('display','block')
     $('#main-sports>ul>li').on('mouseenter', function () {
         $(this).addClass('active').siblings().removeClass('active')
+        var index = $(this).index();
+        $('#main-sports .right').eq(index).css('display','block').siblings('.right').css('display','none')
     })
     // 童装
+    $('#main-baby .right:first').css('display','block')
     $('#main-baby>ul>li').on('mouseenter', function () {
         $(this).addClass('active').siblings().removeClass('active')
+        var index = $(this).index();
+        $('#main-baby .right').eq(index).css('display','block').siblings('.right').css('display','none')
     })
     // 推广商品
-    $('.goods-slider>li').on('mouseenter', function () {
+    $('.goods-slider>li').on('click', function () {
         $(this).addClass('bgc-f60').siblings().removeClass('bgc-f60')
+        var index = $(this).index();
+        $('.innerbox').animate({'left':-index*1200})
+
     })
 
     /* 书籍手风琴 */
@@ -187,6 +201,8 @@
         $(this).siblings('dt').show();
     })
 
+
+    /* 底部tab切换 */
 
 
 
