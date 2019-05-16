@@ -30,3 +30,11 @@ $('.product ul li').on('mouseenter', function () {
 }).on('mouseleave', function () {
     $(this).find('.del').hide();
 })
+
+/* 商品评价tab切换 */
+$('.right>button').on('click',function(){
+    var index = $(this).index();
+    $(this).addClass('active').siblings('button').removeClass('active')
+    $('#bigbox .itme').eq(index).removeClass('disNone').addClass('disBlock').siblings()
+    .removeClass('disBlock').addClass('disNone')
+})
