@@ -1,0 +1,418 @@
+/* 头部区域 */
+
+/* 顶部黑色边栏 */
+#header .black-bar{
+    background: #101010;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+#header .black-bar .topbar{
+    position: relative;
+}
+#header .black-bar .topbar .header-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header .black-bar .topbar .header-logo img{
+    width: 258px;
+	height: 105px;
+}
+
+#header .black-bar .topbar span {
+    display: block;
+    float: right;
+    margin-right: 10;
+    margin-right: 10px;
+}
+#header .black-bar .topbar>a{
+    margin-left:265px; 
+    color: #fff;
+}
+#header .black-bar .topbar span a {
+    color: #f60;
+    text-decoration: none;
+}
+
+/* 搜索框 */
+#header .search {
+    width: 440px;
+    height: 36px;
+    background-color: #ffffff;
+    border: solid 2px #ff6600;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+}
+#header .search button{
+    width: 48px;
+	height: 33px;
+	background-color: #ff6600;
+    border: none;
+    outline-style: none;
+}
+#header .search button i{
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+}
+#header .search input{
+    width: 388px;
+    border: none;
+    height: 32px;
+    text-indent: 6px;
+    font-size: 16px;
+    font-family: SimHei;
+    outline-style: none;
+    line-height: 32px;
+}
+/* 配送地址 */
+#header .address{
+    font-size: 14px;
+    color: #4d4d4d;
+    margin-bottom: 28px;
+}
+#header .address select{
+    width: 171px;
+	height: 22px;
+	background-color: #ffffff;
+    border: 1px solid  #d9d9d9;
+   color: #4d4d4d;
+}
+/* 表格 */
+.order-info p{
+    font-size: 20px;
+    color: #666666;
+}
+.order-info{
+    margin-bottom: 37px;
+}
+.order-info table{
+    width: 1200px;
+    height: 502px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.order-info table tr th:first-child{
+    width: 104px;
+    text-align: center;
+}
+.order-info table tr td:first-child{
+    width: 104px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.order-info table tr td:nth-child(2){
+    width: 360px;
+}
+.order-info table tr td:nth-child(2) span{
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+	background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.order-info table tr th:nth-child(3){
+    padding-left: 140px;
+    box-sizing: border-box;
+}
+.order-info table tr td:nth-child(3){
+    width: 266px;
+    padding-left: 140px;
+    box-sizing: border-box;
+}
+.order-info table tr td:nth-child(4){
+    width: 188px;
+}
+.order-info table button{
+    width: 26px;
+	height: 26px;
+	background-color: #ffffff;
+    border: solid 1px #cccccc;
+    font-size: 16px;
+    color: #4d4d4d;
+    line-height: 21px;
+}
+.order-info table tr td:nth-child(4){
+    font-size: 0;
+}
+.order-info table tr td:nth-child(5){
+    width: 140px;
+}
+.order-info table tr td:nth-child(4) input{
+    width: 74px;
+	height: 26px;
+	background-color: #ffffff;
+    border: 1px solid #cccccc;
+    outline-style: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+    border-left: 0;
+    border-right: 0;
+}
+.order-info table thead tr{
+        width: 1200px;
+        height: 60px;
+        background-color: #f2f2f2;
+        font-size: 18px;
+        color: #808080;
+        line-height: 60px;     
+}
+.order-info table tbody i{
+    font-style: normal;
+    margin-top: 22px;
+    margin-left: 29px;
+}
+.order-info table tbody tr{
+    width: 1200px;
+    height: 185px;
+    border-bottom: 2px solid #e6e6e6;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.order-info table tbody tr td{
+    padding-top: 21px;
+}
+.order-info table tbody tr:nth-child(2){
+    border-top: 6px solid #dfdfdf;
+    margin-top: 500px;
+}
+.order-info table tbody tr:first-child{
+    height: 19px;
+}
+
+/* 计算总价 */
+.order-info .totalprice .outbox{
+    width: 1072px;
+	height: 60px;
+	background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    line-height: 60px;
+    font-size: 16px;
+    color: #808080;
+    padding: 0 60px 0 23px;
+}
+.order-info .totalprice button{
+    display: block;
+    width: 128px;
+    height: 60px;
+    border: none;
+	background-color: #ff6600;
+    border-radius: 2px;
+    outline-style: none;
+    font-size: 26px;
+    color: #fefefe;
+    line-height: 60px;
+}
+.order-info .totalprice .outbox .right .count{
+    font-size: 22px;
+    color: #ff6600;
+}
+.order-info .totalprice .outbox .right .price{
+    font-size: 20px;
+    color: #ff6600;
+    display: inline-block;
+    width: 50px;
+}
+.order-info .totalprice .outbox .right i{
+    font-size: 20px;
+    color: #4d4d4d;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* 猜你喜欢 */
+
+
+/* 乐购图书折扣区 */
+.book-discount .topline{
+    background-color: #f60;
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 47px;
+    text-align: center;
+    width: 124px;
+	height: 47px;
+}
+.book-discount ul li{
+    float: left;
+    width: 210px;
+	height: 258px;
+    margin-right: 37px;
+}
+.book-discount ul li:nth-child(5n){
+    margin-right: 0;
+}
+.book-discount ul li .tag{
+    color: #fff;
+    width: 73px;
+    line-height: 24px;
+    font-size: 16px;
+    background-color: #f4290d;
+    position: relative;
+    left: 0px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.book-discount ul li .tag::after{
+    content: '';
+    border: 12px solid;
+    height: 0;
+    border-color:  transparent #fff transparent transparent;
+    position: absolute;
+    right: 0;
+}
+.book-discount ul li>.introduce .score i{
+    font-size: 18px;
+    color: #666;
+    /* color: #feef00; */
+    letter-spacing: -4px;
+}
+
+.book-discount ul li .book-images{
+    text-align: center;
+    width: 210px;
+}
+.book-discount ul li .introduce .title a{
+    font-size: 14px;
+    color: #ccc;
+}
+.book-discount ul li .introduce p{
+    text-indent: 7px;
+    line-height: 24px;
+}
+.book-discount ul li .introduce span{
+    margin-left: 5px;
+    color: #f4290d;
+    font-size: 24px;
+}
+.book-discount ul li .introduce .del{
+    margin-left: 6px;
+    color: #c0c0c0;
+    display: none;
+}
+.book-discount ul li:hover{
+    background-color: #f2f2f2;
+}
+.book-discount{
+    margin-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部页脚 */
+/* 精灵图 */
+.last-line{
+    width: 100%; 
+    position: relative; 
+}
+.spirit{
+    background-color: #f2f2f2;
+    padding: 24px 280px 18px;
+}
+.spirit li{
+    float: left;
+    margin-right:79px; 
+}
+.spirit li:last-child{
+    margin-right: 0;
+}
+.spirit .icon-1{
+    background-position: 0 0 ;
+}
+.spirit .icon-2{
+    background-position: 0 -52px ;
+}
+.spirit .icon-3{
+    background-position: 0 -104px ;
+}
+.spirit .icon-4{
+    background-position: 0 -156px ;
+}
+/* 返回顶部 */
+.goTop{
+    width: 30px;
+    height: 50px;
+    font-size: 16px;
+    color:#fff;
+    background-color: #999;
+    position: fixed;
+    text-align: center;
+    bottom: 100px;
+    left: 50%;
+    margin-left: 600px;
+    box-sizing: border-box;
+    padding-top: 8px;
+    font-family: SimHei;
+    cursor: pointer;
+    display: none;
+}
+
+/* 页脚部分 */
+
+#footer{
+    margin-top: 35px;
+}
+#footer .foot-list>ul{
+    float: left;
+    width: 165px;
+    text-align: center;
+
+}
+#footer .foot-list>ul>li{
+    line-height: 28px;
+    color: #000;
+    font-family: SimHei;
+}
+#footer .foot-list>ul>li:first-child{
+    font-size: 18px;
+}
+#footer .foot-list>ul>li a {
+    color: #4d4d4d;
+    font-size: 15px;
+    
+}
+#footer .foot-list{
+    padding-left: 190px;
+}
+#footer .foot-list .foot-logo{
+    margin-top: 30px;
+}
+
+#footer .foot-link>a{
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+    border-right: 1px solid #333;
+    line-height: 14px;
+    padding: 0 18px;
+}
+#footer .foot-link>a:last-child{
+    border: 0;
+}
+#footer .foot-link{
+    text-align: center;
+    margin-top: 46px;
+}

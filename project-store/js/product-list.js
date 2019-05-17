@@ -9,11 +9,11 @@ $('.banner-images>ul>li').on('click', function () {
     $('.banner-images .slider>ul>li').eq(inx).fadeIn().siblings().fadeOut();
     // 下表标变化按钮也变
     $('.banner-images>ul>li').eq(inx).addClass('bgc-f60').siblings().removeClass('bgc-f60')
-
 })
 
-var index = 0;
+
 // 点击右箭头下标自增
+    var index = 0;
 $('.banner-images .slider .arrow .arrow-right').on('click', function () {
     index++;
     // 边界判定
@@ -24,6 +24,8 @@ $('.banner-images .slider .arrow .arrow-right').on('click', function () {
     //   下表标变化按钮也变
     $('.banner-images>ul>li').eq(index).addClass('bgc-f60').siblings().removeClass('bgc-f60')
 })
+
+
 // 点击左边箭头下标自减
 $('.banner-images .slider .arrow .arrow-left').on('click', function () {
     index--;
@@ -128,6 +130,7 @@ $('#privision-nav li').on('click', function () {
 // 按钮点击事件
 // 左键
 // 定义变量记录索引
+// 获取当前显示的left
 var i = 0;
 $('.btn-left').on('click', function () {
     i--;
@@ -140,7 +143,6 @@ $('.btn-left').on('click', function () {
     // 圆形按钮
     $('.slider-ball>li').eq(i).addClass('bgc-f60').siblings().removeClass('bgc-f60')
 })
-    console.log(i)
 // 点击右键
 $('.btn-right').on('click', function () {
     if(i === 6){
