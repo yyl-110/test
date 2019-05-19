@@ -120,10 +120,13 @@
 /* 登陆 */
 .content .account .login-account input,
 .content .account .psd input{
+    text-indent: 45px;
     width: 288px;
     height: 38px;
     border: 1px solid #bfbfbf;
+    font-size: 20px;
 }
+
 .content .account  i{
     display: inline-block;
     line-height: 38px;
@@ -139,6 +142,22 @@
     height: 40px;
     margin-left: 30px;
     margin-bottom: 17px;
+}
+.content .account .login-account span{
+    position: absolute;
+    top: 11px ;
+    right: -45px;
+    font-size: 18px;
+    color: #eaeaea;
+    display: none;
+}
+.content .account .psd span{
+    position: absolute;
+    top: 11px ;
+    right: -45px;
+    font-size: 18px;
+    color: #eaeaea;
+    display: none;
 }
 .content .account .login-account i{
     top: 1px;
@@ -179,7 +198,7 @@
     font-size: 22px;
     outline-style: none;
 }
-.content .account span{
+.content .account span.right{
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -187,7 +206,7 @@
     background-color: #e2373d;
     color: #fff;
     text-align: center;
-    line-height: 14px;
+    line-height: 16px;
 }
 .content .account .immediately{
     border-top: 1px solid #e6e6e6;

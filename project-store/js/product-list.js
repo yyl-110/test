@@ -58,31 +58,9 @@ $('.banner-images').on('mouseenter', function () {
 })
 
 /* banner手风琴 */
-// $('.accordion>.book-list>li.change').on('mouseenter',function(){
-//     // 初始top
-//     var idx =  $(this).index()
-//     var oldtop = $(this).css('top')
-//     var numAldTop = parseInt(oldtop)
-//     // top变化的距离
-//     var moveDistance = (numAldTop-100)+'px'
-
-//     // 遍历li
-//     $.each($('.accordion>.book-list>li.change'),function(index,itme){
-//         var oldDistance = (index-1)*(-100)+'px'
-//         console.log(oldDistance)
-//         if(inx > 1){
-//             $(this).siblings('.change').css('top','oldDistance')
-//         }
-//     })
-//     $(this).css('top',moveDistance)
-
-// })
-// .on('mouseleave',function(){
-//     var index = $(this).index();
-//     var oldDistance = (index-1)*(-100)+'px'
-//     $(this).css('top',oldDistance)
-// })
-
+$('.book-list li').on('mouseenter',function(){
+    $(this).stop().animate({height:'100px'}).siblings().stop().animate({height:'5px'})
+})
 
 
 
@@ -162,6 +140,19 @@ $('.slider-ball li').on('click', function () {
     $('.innerbox').stop().animate({ 'left': -index * 1200 })
     // 导航切换
     $('#privision-nav li').eq(index).addClass('resemble').siblings().removeClass('resemble')
-
 })
+
+/* 猜你喜欢 */
+var inx = 0;
+$('.next-guess span').on('click',function(){
+    inx ++
+    $('.guess-content').stop(true).animate({'left':-inx * 1200},function(){
+        if(inx > 2 ){
+            inx = 0;
+            $('.guess-content').css('left',0)
+        }
+    })
+  
+})
+
 

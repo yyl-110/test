@@ -61,6 +61,13 @@
 
 
 /* 注册 */
+.error {
+    color: red;
+}
+.error:first-child {
+    border: 1px solid red;
+    color: #333;
+}
 .register form{
     width: 400px;
     margin-top: 56px;
@@ -84,6 +91,7 @@
     color: #cccccc;
     border: none;
     height: 36px;
+    width: 254px;
     line-height: 36px;
     outline-style: none;
     
@@ -91,6 +99,7 @@
 .register form>div.username input{
     height: 36px;
     margin-left: 56px;
+    width: 264px;
 }
 .register form>div.psd input{
     margin-left: 33px;
@@ -101,25 +110,34 @@
 .register form>div.tel input{
     margin-left: 35px;
 }
-.register form>div.verification-code input{
+.register form #verification input{
     margin-left: 55px;
     width: 150px;
 }
-.register form>div.verification-code{
+.register form #verification{
     position: relative;
 }
-.register form>div.verification-code i{
-    width: 124px;
-	height: 36px;
-	background-color: #1a83e5;
-    display: inline-block;
-    font-style: normal;
-    line-height: 36px;
-    position: absolute;
-    right: 4px;
-    top: 3px;
 
+/* 验证码 */
+.verify-code{
+    width: 100px;
+    height: 30px;
+    float: right;
+    position: absolute;
+    top: 2px;
+    right: 2px;
 }
+ input.verify-input-code{
+    height: 100px!important;
+}
+.cerify-code-panel{
+    display: none;
+}
+
+
+
+
+
 .register form>div.phone input{
     margin-left: 11px;
     width: 130px;
@@ -140,6 +158,9 @@
     position: absolute;
     top: 2px;
     right: 2px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 .register form>p{
     font-size: 14px;

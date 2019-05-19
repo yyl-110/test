@@ -210,8 +210,9 @@
 
 
     /* 返回顶部 */
-    $('.goTop').on('click', function () {
-        $('html').animate({ scrollTop: 0 }, 'slow');
-    })
+     $('.goTop').on('click', function () {
+            $('html').animate({ scrollTop: 0 }, 'slow');
+       
+     })
 
 

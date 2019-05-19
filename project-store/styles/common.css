@@ -78,6 +78,10 @@
 .bgc-ccc{
     background: #ccc;
 }
+i{
+    font-style: normal;
+}
+
 /* 激活类 */
 .active{
     background: #f60 !important;

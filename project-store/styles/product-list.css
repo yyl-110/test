@@ -280,6 +280,10 @@
     font-size: 14px;
     color: #333;
 }
+.banner .accordion>.book-list li{
+    height: 5px;
+    overflow: hidden;
+}
 .banner .accordion>.book-list>li{
     padding: 20px 0;
     position: relative;
@@ -287,21 +291,10 @@
     background-color: #fff;
     z-index: 0;
 }
-/* .banner .accordion>.book-list>li:nth-child(2){
-    top: -100px;
-} */
-.banner .accordion>.book-list>li:nth-child(3){
-    top: -100px;
+.banner .accordion>.book-list>li:nth-child(1){
+    height: 100px;
 }
-.banner .accordion>.book-list>li:nth-child(4){
-    top: -200px;
-}
-.banner .accordion>.book-list>li:nth-child(5){
-    top: -300px;
-}
-.banner .accordion>.book-list>li:nth-child(6){
-    top: -400px;
-}
+
 
 .banner .accordion>.book-list>li .num{
     position: absolute;
@@ -711,10 +704,16 @@
     font-size: 22px;
     color: #333;
 }
-
-
+.guess .outbox{
+    width: 1200px;
+    height: 492px;
+    overflow: hidden;
+}
 .guess .guess-content{
     position: relative;
+    width: 4800px;
+    height: 492px;
+    left: 0;
     border-bottom:2px solid #e6e6e6;
 }
 .guess .guess-content>.recommend-book>li{
@@ -724,6 +723,9 @@
 }
 .guess .guess-content>.recommend-book{
     padding: 16px 37px 12px 30px;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 492px;
     
 }
 .guess .guess-content>.recommend-book>li>div{

@@ -38,3 +38,16 @@ $('.right>button').on('click',function(){
     $('#bigbox .itme').eq(index).removeClass('disNone').addClass('disBlock').siblings()
     .removeClass('disBlock').addClass('disNone')
 })
+
+
+/* 放大镜 */
+
+$(function () {
+    // 调用插件函数
+	magnifier({
+		magnifier : "#magnifier1",// 最外层的大容器
+		width : 340,//承载容器宽
+		height : 350,//承载容器高
+		zoom : 2//缩放比例
+	})
+})

@@ -1,0 +1,341 @@
+/* 头部区域 */
+
+/* 顶部黑色边栏 */
+#header .black-bar{
+    background: #101010;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+#header .black-bar .topbar{
+    position: relative;
+}
+#header .black-bar .topbar .header-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header .black-bar .topbar .header-logo img{
+    width: 258px;
+	height: 105px;
+}
+
+#header .black-bar .topbar span {
+    display: block;
+    float: right;
+    margin-right: 10;
+    margin-right: 10px;
+}
+#header .black-bar .topbar>a{
+    margin-left:265px; 
+    color: #fff;
+}
+#header .black-bar .topbar span a {
+    color: #f60;
+    text-decoration: none;
+}
+#header{
+    height: 105px;
+}
+
+/* 订单内容 */
+.order-content .succeed {
+    font-size: 20px;
+    color: #666666;
+    margin-top: 20px;
+}
+.order-content .succeed a{
+    font-size: 18px;
+    color: #1080e9;
+    text-decoration: none;
+}
+.order-content .sum{
+    width: 1200px;
+	height: 60px;
+    background-color: #f2f2f2;
+    line-height: 60px;
+    font-size: 18px;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+}
+.order-content .sum span:first-of-type{
+    margin-right: 560px;
+}
+.order-content .sum i{
+   color: #f30e0e;
+    font-style: normal;
+}
+.LG-pay{
+    width: 150px;
+	height: 40px;
+    background-color: #ff6600;
+    display: inline-block;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+.lg i{
+    font-size: 18px;
+    color: #bfbfbf; 
+    font-style: normal;
+}
+.lg{
+    margin-bottom: 10px;
+}
+
+.order-content .pay-method{
+    width: 1200px;
+	height: 94px;
+    background-color: #f2f2f2;
+    padding: 28px 23px 32px 64px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+.order-content .pay-method ul li{
+    float: left;
+}
+.order-content .pay-method ul li:first-child{
+    width: 125px;
+    height: 34px;
+    border: 2px solid #bfbfbf;
+    box-sizing: border-box;
+    line-height: 34px;
+    font-size: 18px;
+    color: #4d4d4d;
+    text-align: center;
+    position: relative;
+    margin-right: 23px;
+}
+.order-content .pay-method ul li:first-child:hover {
+    border: 2px solid #f60;
+}
+.order-content .pay-method ul li:first-child:hover i{
+    display: block;
+}
+.order-content .pay-method ul li:first-child i{
+    background-color: #f60;
+    width: 16px;
+    height: 14px;
+    line-height: 16px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.order-content .pay-method ul li:nth-child(2){
+    width: 348px;
+	height: 34px;
+    border: 1px solid #bfbfbf;
+    box-sizing: border-box;
+    line-height: 32px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-right: 27px;
+}
+.order-content .pay-method ul li:nth-child(2) span{
+    margin-right: 55px;
+}
+.order-content .pay-method ul li:nth-child(2) i{
+    margin-left: 35px;
+}
+.order-content .pay-method ul li:nth-child(3){
+    width: 120px;
+	height: 30px;
+    background-color: #999999;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+.order-content .pay-method ul li:last-child{
+    font-size: 18px;
+    margin-left: 322px;
+}
+.order-content .pay-method ul li:last-child span{
+    font-size: 22px;
+}
+.order-content>button{
+    width: 228px;
+	height: 60px;
+	background-color: #ff6600;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border: none;
+    font-size: 26px;
+    list-style: none;
+    outline: none;
+    margin-bottom: 39px;
+}
+
+
+.order-content>a{
+    width: 150px;
+    height: 40px;
+    background-color: #76aff5;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fefefe;
+    margin-bottom: 14px;
+}
+.order-content>span{
+    font-size: 18px;
+    color: #bfbfbf;
+}
+.order-content .allpay{
+    width: 1200px;
+	height: 94px;
+    background-color: #f2f2f2;
+    padding-top: 36px;
+    padding-left: 74px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #595959;
+    margin-bottom: 39px;
+}
+
+/* 蒙版层制作 */
+.model{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+
+    display: none;
+    
+}
+.model .pay-success{
+    width: 470px;
+    height: 276px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+}
+.model .pay-success .top{
+    width: 470px;
+    height: 40px;
+    background-color: #e6e6e6;
+    font-size: 20px;
+    padding: 10px 12px 0 ;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+}
+.model .pay-success .bottom{
+    text-align: center;
+}
+.model .pay-success .bottom p{
+    margin-bottom: 24px;
+}
+.model .pay-success .bottom button{
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    background-color: #f60;
+    border: none;
+    outline-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部页脚 */
+/* 精灵图 */
+.last-line{
+    width: 100%; 
+    position: relative; 
+}
+.spirit{
+    background-color: #f2f2f2;
+    padding: 24px 280px 18px;
+}
+.spirit li{
+    float: left;
+    margin-right:79px; 
+}
+.spirit li:last-child{
+    margin-right: 0;
+}
+.spirit .icon-1{
+    background-position: 0 0 ;
+}
+.spirit .icon-2{
+    background-position: 0 -52px ;
+}
+.spirit .icon-3{
+    background-position: 0 -104px ;
+}
+.spirit .icon-4{
+    background-position: 0 -156px ;
+}
+/* 页脚部分 */
+
+#footer{
+    margin-top: 35px;
+}
+#footer .foot-list>ul{
+    float: left;
+    width: 165px;
+    text-align: center;
+
+}
+#footer .foot-list>ul>li{
+    line-height: 28px;
+    color: #000;
+    font-family: SimHei;
+}
+#footer .foot-list>ul>li:first-child{
+    font-size: 18px;
+}
+#footer .foot-list>ul>li a {
+    color: #4d4d4d;
+    font-size: 15px;
+    
+}
+#footer .foot-list{
+    padding-left: 190px;
+}
+#footer .foot-list .foot-logo{
+    margin-top: 30px;
+}
+
+#footer .foot-link>a{
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+    border-right: 1px solid #333;
+    line-height: 14px;
+    padding: 0 18px;
+}
+#footer .foot-link>a:last-child{
+    border: 0;
+}
+#footer .foot-link{
+    text-align: center;
+    margin-top: 46px;
+}

@@ -82,7 +82,84 @@
         </div>
         <div class="product-content w1200 clearfix">
             <div class="product-magnifier fl">
-                <img src="./images/000.png" alt="">
+                <!-- 放大镜 -->
+
+                <!-- 放大镜容器 -->
+                <div class="magnifier" id="magnifier1">
+                    <div class="magnifier-container">
+                        <!--当前图片显示容器-->
+                        <div class="images-cover"></div>
+
+                        <!--跟随鼠标移动的盒子-->
+                        <div class="move-view"></div>
+                    </div>
+                    <div class="magnifier-assembly">
+                        <!-- 按钮 -->
+                        <div class="magnifier-btn">
+                            <span class="magnifier-btn-left">&lt;</span>
+                            <span class="magnifier-btn-right">&gt;</span>
+                        </div>
+
+                        <!--按钮组-->
+                        <div class="magnifier-line">
+                            <!--缩略图-->
+                            <ul class="clearfix animation03">
+                                <li>
+                                    <div class="small-img">
+                                        <img src="./images/书籍/5.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="./images/书籍/9.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="./images/书籍/7.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="./images/书籍/8.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="./images/书籍/6.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="./images/书籍/3.jpg" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--经过放大的图片显示容器-->
+                    <div class="magnifier-view"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <p>商品编号：11950959</p>
             </div>
             <div class="product-buy fr">
@@ -664,6 +741,7 @@
 
 
     <script src="./js/jquery.js"></script>
+    <script src="./js/magnifier.js"></script>
     <script src="./js/details.js"></script>
 </body>
 
