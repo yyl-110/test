@@ -11,6 +11,7 @@ $('.login-code').on('click', function () {
     $('#qr-code').delay(2000).animate({ left: '74' })
     $('#phone').delay(2000).fadeOut();
 })
+// 进入页面自动触发点击事件
 $('.login-code').trigger('click');
 
 $('.qr-code').hover(function () {

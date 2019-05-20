@@ -104,6 +104,10 @@
     font-size: 14px;
     position: relative;
 }
+#header .shopping .cart a{
+    color: #fff;
+    text-decoration: none;
+}
 #header .shopping .cart:hover .cart-info{
     display: block;
 }
@@ -265,72 +269,49 @@
 #banner>.slider{
     width: 1000px;
     height: 400px;
-    background-color: red;
     position: relative;
+    overflow: hidden;
+}
+#banner>.slider>ul{
+    width: 8000px;
+    height: 400px;
+    position: relative;
+    left: -1000px;
 }
 #banner>.slider>ul>li img{
     width: 1000px;
     height: 400px;
 }
 #banner>.slider>ul>li{
-    position: absolute;
-    display: none;
-}
-#banner>.slider>ul>li:first-child{
-    display: block;
+    float: left;
 }
 
 
-/* 左右箭头 */
-#banner>.slider>.arrow>i{
-    width: 36px;
-	height: 70px;
-	background-color: #000000;
-    opacity: 0.4;
-    display: inline-block;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    line-height: 70px;
-}
-#banner>.slider>.arrow .arrow-left{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -35px;
-}
-#banner>.slider>.arrow .arrow-right{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -35px;
-}
-#banner>.slider>.arrow{
-    display: none;
-}
-#banner>.slider:hover .arrow{
-    display: block;
-}
 
 /* 轮播按钮 */
-#banner>ul>li{
-    width: 24px;
-	height: 24px;
+#banner .controls>li{
+    width: 24px!important;
+	height: 24px!important;
     background-color: #d8d8d8;
-    border-radius: 50%;
-    color: #fff;
+    border-radius: 50%!important;
     font-size: 16px;
     text-align: center;
     line-height: 24px;
     float: left;
-    margin-right: 11px;
+    margin-right: 13px;
     cursor: pointer;
+    color: #fefefe;
 }
-#banner>ul{
+#banner .controls>li:last-child{
+    margin-right: 0!important;
+}
+.main-banner .controls{
+    /* bottom: -30px!important; */
+    width: 210px!important;
     margin-top: 3px;
-    margin-left: 396px;
-    display: none;
+    height: 24px!important;
 }
+
 
 /*右边弹出框  */
 .voucher{

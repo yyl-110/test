@@ -152,7 +152,24 @@ $('.next-guess span').on('click',function(){
             $('.guess-content').css('left',0)
         }
     })
-  
 })
+
+/* 无线滚动 */
+var index = 0;
+setInterval(function(){
+    index ++
+    $('.selected-book>ul').animate({'left':-index *1200},1000,
+    function(){
+        if( index > 1){
+            index = 0;
+            $('.selected-book>ul').css('left', 0)
+        }
+    }
+    )
+
+
+},2000)
+
+
 
 
